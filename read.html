@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>read</title>
+  
+</head>
+<body>
+    <div class="saveText" id="savedTexts"></div>
+    <script>
+        
+        //get item from localstore
+            const savedTexts = JSON.parse(localStorage.getItem("savedTexts")) || [];
+        
+		// Loop through the saved texts and create a new div for each one
+         for (var i = 0; i < savedTexts.length; i++) {
+           const div = document.createElement("div");
+           const cancel = document.createElement('button');
+           div.className = "divs";
+           div.innerHTML = savedTexts[i];
+           document.getElementById("savedTexts").appendChild(div);
+           cancel.innerHTML = "Remove";
+           cancel.className = "cancel";
+           div.appendChild(cancel);
+    
+        // Add click event listener to the remove button
+           cancel.addEventListener('click', function() {
+           div.remove();
+        // Remove the corresponding data from localStorage
+           const index = savedTexts.indexOf(div.innerHTML);
+           savedTexts.splice(index, 1);
+           localStorage.setItem("savedTexts", JSON.stringify(savedTexts));
+    });
+}
+
+        const btn = document.querySelector('#btn');
+        const classObj = {
+            ori: 'small',
+            small: 'medium',
+            medium: 'large',
+            large: 'ori'
+           };
+            btn.forEach(addEventListener('click', ()=>{
+            btn.classList = classObj[btn.classList[0]];
+        }));
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("body").addClass("animated hinge");
+        });
+    </script>
+</body>
+</html>

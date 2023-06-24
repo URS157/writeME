@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scle=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="shortcut icon" href="OIP.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&amp;display=swap" rel="stylesheet">
+    <img href="CSS/img/OIP.jfif"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css"/>
+    <title>Write Me</title>
+</head>
+<body>
+    <div class="header" id="h1">
+        <div class="orders" id="h3">
+            <button class="it_1" id="t1" onclick="showDiv()"> للانضمام</button>
+            <button class="it_2" href="" id="it2">للتواصل معنا</button>
+            <button href="" id="it3" class="it_3" onclick="showIfo()">للمزيد من المعلومات</button>
+        </div>
+        <div class="title" id="h2"> 
+            <h5>قصتي </h5>
+        </div>
+    </div>
+    <div class="indraw">
+       <button class="writing" id="write">
+        <img class="undraw" src="CSS/img/undraw_post_re_mtr4.svg" alt="post your ideas">
+       </button> 
+       <button class="reading" id="read">
+        <img class="online" src="CSS/img/undraw_online_reading_np7n.svg" alt="reading">
+       </button>
+    </div>
+    <div class="f-T">
+        <p>قصص بأحداث تتوارى و تتوالى, تضجر القارئ بمقدماتها الساكنة و الهادئة لكن أحداث عروضها ما ثلبت سوى</p>
+        <p>أن توثق عبرة أو عقدة حياة أحدهم مجهول أو ملموح الهوية. موقع يجمع بين القراء و الكتاب في آن واحد</p>
+        <p class="ask">....................................فهل تساءلتم يوما عن ما يمكن للقراءة و الكتابة علاجه ؟ ...............................</p>
+    </div>
+    <div class="s-T">
+     <p>حسنا شدوا الأحزمة يا أصدقاء!...سيأخذكم موقع ’قصتي’ برحلات بحرية يكون البحر آلاما و مشاعرا</p>
+     <p>......سنبحر بها على متن سفن متعددة و في كل سفينة سيختفي القراء بمشاهدة القبطان و هو...</p>
+     <p>يواجه أعلى الأمواج متألما و متألمين معه لتبتهجوا معه بعد سطوع الشمس أمل يومه الموعود و</p>
+     <p>الدي سيهدأ به البحر و يجول به السكون و تكمل السفينة رحلتها بالوصول الى مبتغى قبطانها هدا</p>
+    </div>
+    <div class="T-T">
+        <p>قصص بأحداث تتوارى و تتوالى, تضجر القارئ بمقدماتها الساكنة و الهادئة لكن أحداث عروضها ما ثلبت سوى أن توثق عبرة أو عقدة حياة أحدهم مجهول أو ملموح الهوية. موقع يجمع بين القراء و الكتاب في آن واحد</p>
+    </div>
+    <div class="T-T2">
+        <p>حسنا شدوا الأحزمة يا أصدقاء!...سيأخذكم موقع ’قصتي’ برحلات بحرية يكون البحر آلاما و مشاعرا
+            ......سنبحر بها على متن سفن متعددة و في كل سفينة سيختفي القراء بمشاهدة القبطان و هو...
+            يواجه أعلى الأمواج متألما و متألمين معه لتبتهجوا معه بعد سطوع الشمس أمل يومه الموعود و
+            الدي سيهدأ به البحر و يجول به السكون و تكمل السفينة رحلتها بالوصول الى مبتغى قبطانها هدا
+        </p>
+    </div>
+    <div class="join-me" id="jn">
+        <input type='text' class='input' id='input' placeholder='ادخل اسمك الكامل' required></input>
+        <button type="submit" id="readMe" class="button-read">بدي أقرأ قصتي</button>
+        <button type="submit" id="writeMe" class="button-write">بدي أكتب قصتي</button>
+        <button type='submit' id="done" onclick="itDone()" class='but-join'>تم</button>
+        <span class='close' id='close'>&times;</span>
+    </div>
+<!--for more information-->
+    <div class="infor" id="info">
+        <h5>مرحبًا بك</h5>
+        <p>موقع "قصتي" هو موقع يساعد الناس على التخلص من الضغط النفسي والعاطفي من خلال كتابة قصصهم ومشاركتها مع الآخرين. يوفر هذا الموقع بيئة آمنة ومحفزة للأفراد الذين يرغبون في التعبير عن أفكارهم ومشاعرهم دون الحاجة إلى الخوض في تفاصيل محددة أو إظهار هويتهم.</p>
+        <p>عندما تقرر الكتابة على "قصتي"، ستجد نفسك في واجهة سهلة الاستخدام حيث يمكنك كتابة قصتك بحرية دون الخوف من الحكم أو التقييد. ستجد أيضًا مجتمعًا مفعمًا بالدعم والتعاطف من المستخدمين الآخرين الذين قد يشعرون بنفس الأشياء التي تشعر بها.</p>
+        <p>يساعد "قصتي" المستخدمين على فهم مشاعرهم وتحليلها بطريقة صحية وإيجابية، ويساعد أيضًا في بناء العلاقات الاجتماعية الصحية بين المستخدمين. إذا كنت ترغب في التخلص من الضغط النفسي والتعبير عن أفكارك ومشاعرك بحرية، فإن "قصتي" هو المكان المناسب للقيام بذلك.</p>
+        <h5>ادا أردت كتابة قصتك</h5>
+        <img class="forWr" src="CSS/img/writing.png" alt="">
+        <h5>ادا أردت رؤية قصص الناس</h5>
+        <img class="forWr" src="CSS/img/Reading.png" alt="">
+        <span class="close" id="close1">&times;</span>
+    </div>
+    <div class="humber" onclick="showMenu()">
+        <div class="humber-line"></div>
+    </div>
+    <div class="menu orders" id="menu-1">
+        <div class="button-container">
+            <button class="it_1" id="t1" onclick="showDiv()"> للانضمام</button>
+            <button class="it_2" href="" id="it2">للتواصل معنا</button>
+            <button href="" id="it3" class="it_3" onclick="showIfo()">للمزيد من المعلومات</button>
+        </div>
+    </div>
+    <script>
+ //parte of change file to write.html
+const writep = document.getElementById("write");
+
+writep.addEventListener("click", function() {
+    window.location.href = "write.html";
+});
+const writeMe = document.getElementById('writeMe');
+writeMe.addEventListener("click", function() {
+    window.location.href = "write.html";
+});
+
+//parte of change file to read.html
+const readp = document.getElementById("read");
+const readMe = document.getElementById("readMe")
+//const readM = document.getElementById("readMe");
+readMe.addEventListener("click", function() {
+    window.location.href = "read.html";
+});
+readp.addEventListener("click", function() {
+    window.location.href = "read.html";
+});
+//show more information
+function showIfo(){
+    const ifo = document.getElementById('info');
+    ifo.style.display = "block";
+    const close = document.getElementById('close1');
+    close.addEventListener('click', ()=>{
+        ifo.style.display = "none";
+    });
+    window.onclick = (event) => {
+        if(event.target === ifo){
+            ifo.style.display = "none"
+        }
+    }
+}
+
+//parte of module
+function showDiv(){
+    const menu = document.getElementById('jn');
+    menu.style.display = "block";
+    const close = document.getElementById('close');
+    close.addEventListener('click', ()=>{
+        menu.style.display = "none";
+    })
+    window.onclick = (event) => {
+        if(event.target === menu){
+            menu.style.display = "none"
+        }
+    }
+};
+//Get information about Person
+const done = document.getElementById('done');
+const input = document.getElementById('input');
+function itDone() {
+    const person = input.value;
+    const savedPerson = JSON.parse(localStorage.getItem('savedPerson')) || [];
+    savedPerson.push(person);
+    localStorage.setItem("savedPerson", JSON.stringify(savedPerson));
+    alert(`مرحبا بك ${person} في قصتي`);
+    document.getElementById('input').value = "";
+}
+//Our contacts
+//scroll To bottom
+const contact = document.getElementById('it2');
+contact.addEventListener('click', ()=>{
+    window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth"});
+});
+//media sceen 
+const humber = document.querySelector('.humber');
+let isOpen = false;
+humber.addEventListener('click', ()=>{
+    if(!isOpen){
+        humber.classList.add('open');
+        isOpen = true;
+    }else
+    {
+        humber.classList.remove('open');
+        isOpen = false;
+    }
+});
+//show menu
+    const menu = document.getElementById('menu-1');
+    const open = document.querySelector('.open');
+    const but1 = document.getElementById('t1');
+    const but2 = document.getElementById('it2');
+    const but3 = document.getElementById('it3');
+    humber.addEventListener('click', (e)=>{
+        if(menu.style.display === "block"){
+            menu.style.display = "none";
+        } else {
+            menu.style.display = "block";
+        }
+    })
+//JS for Media screen
+
+    but1.addEventListener('click', ()=>{
+        const menu = document.getElementById('menu-1');
+            menu.style.display = "none";
+    })
+    const mediaScr = window.matchMedia("(max-width: 550px)");
+    mediaScr.addListener(handleMediaQueryChange);
+    function handleMediaQueryChange(mediaScr){
+
+    }
+  </script>
+  <p class="copy">
+     ©
+    <script>
+      document.write(new Date().getFullYear())
+    </script>
+    Founder:
+    Youssef Mounib
+  </p>
+  <div class="icon" id="icon">
+    <a href="https://facebook.com/Yusuf Urs"><i class="fa fa-facebook-official" aria-hidden="true"></i>Yusuf Urs</a>
+    <a href="https://instagram.com/joseph_mounib"><i class="fa fa-instagram" aria-hidden="true"></i>@joseph_mounib</a>
+    <a href=""><i class="fa fa-whatsapp" aria-hidden="true"></i>+212767739991</a>
+    <a href="https://gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i>mounby157@gmail.com</a>
+</div>
+</body>
+</html>
